@@ -1,0 +1,25 @@
+<ion-view view-title="Cadastro do Curso">
+    <ion-content>
+  		<form ng-submit="cadcurso()">
+  		<br/>
+			<div class="row responsive-sm">
+		    	<h4>Escolha seu curso</h4>
+		    </div>
+		    
+		    <div class="row responsive-sm">
+		    	<select 
+		    		ng-model="selectedOpt" 
+		    		ng-change="update(selectedOpt)" 
+		    		class="select" 
+		    		ng-options="blisterPackTemplate as blisterPackTemplate.descricao for blisterPackTemplate in cursos">
+		    	</select>
+		    </div>
+		    <br/>
+		    <div class="row responsive-sm">
+		    	<button type="submit" class="button button-positive">
+	  					Cadastrar curso
+				</button>
+		    </div>
+		</form>
+    </ion-content>
+</ion-view>

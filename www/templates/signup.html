@@ -1,0 +1,22 @@
+<form ng-submit="cadastro(usuario)">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Nome Completo</span>
+    <input type="text" ng-model="usuario.nome" />
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" ng-model="usuario.email" />
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Senha</span>
+    <input type="password" ng-model="usuario.password" />
+  </label>
+<div class="container">
+<button type="submit" class="button button-block button-positive">
+  Cadastrar
+</button>
+<a href="#/access/signin" class="button button-block button-calm">
+    Já tenho cadastro
+</a>
+</div>
+</form>  

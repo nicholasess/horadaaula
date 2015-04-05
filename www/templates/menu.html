@@ -1,0 +1,51 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu menu-close expose-aside-when="large">
+    <header class="bar bar-header bar-dark">
+      <div class="title">Menu</div>
+    </header>
+    <ion-content>
+      <div class="list margin-list">
+      <a class="item item-icon-left" href="#/app/dashboard">
+        <i class="icon ion-ios-speedometer"></i>
+        Página Inicial             
+      </a>
+      <!-- <a class="item item-icon-left" href="#/app/dashboard">
+        <i class="icon ion-ios-paper"></i>
+        Trabalhos/Provas
+      </a> -->
+<!--       <a class="item item-icon-left" href="#/anotacao/materia">
+        <i class="icon ion-ios-list"></i>
+        Anotações
+      </a> -->
+      <!-- <a class="item item-icon-left" href="#/app/dashboard">
+        <i class="icon ion-speakerphone"></i>
+        Fora da Aula
+      </a> -->
+<!--       <a class="item item-icon-left" href="#/app/dashboard">
+        <i class="icon ion-home"></i>
+        Faculdade
+      </a>
+ -->      <a class="item item-icon-left" href="#/user/perfil">
+        <i class="icon ion-university"></i>
+        Perfil
+      </a>
+      <a class="item item-icon-left" ng-click="logout()">
+        <i class="icon ion-ios-redo"></i>
+        Sair
+      </a>
+    </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

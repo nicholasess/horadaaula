@@ -1,0 +1,21 @@
+<ion-view view-title="Página Inicial">
+    <ion-content>
+    <div ng-show="semcurso">
+    <div class="list">
+	  <a class="item item-icon-right" ng-repeat="semestre in semestres" href="#/app/semestre/{{semestre.idsemestre}}">
+	    {{semestre.descricao}}
+	    <i class="icon ion-chevron-right"></i>
+	  </a>
+	</div>			
+    </div>
+    <div ng-hide="semcurso">
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="container">
+	<h4>Você ainda não tem um curso cadastrado</h4>
+	    <a class="button button-calm" href="#/user/curso">
+	  		Clique aqui para começar!
+		</a>
+	</div>
+  	</div>
+    </ion-content>
+</ion-view>

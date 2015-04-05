@@ -1,0 +1,33 @@
+<ion-view view-title="Dias da Semana">
+    <ion-content>
+    <div ng-hide="semana.status">
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="container">
+  <h3>O semestre ainda não tem horários!</h3>
+  </div>  
+    </div> 
+    <div ng-show="semana.status">
+      <div class="card" ng-repeat="dia in semana.dias" ng-show="dia.status">
+          <div class="item item-divider t_center">
+        {{dia.dia}}
+      </div>
+      <div class="item item-text-wrap" ng-repeat="aula in dia.aulas">
+      <div class="row">
+          <div class="col col-30">
+            {{aula.hora_inicio}}
+          </div>
+          <div class="col col-40">
+            {{aula.materia}}
+          </div>
+          <div class="col col-30">
+            {{aula.professor}}
+          </div>
+        </div>
+      </div>  
+    </div>  
+    </div>   
+
+    </div>
+
+    </ion-content>
+</ion-view>
